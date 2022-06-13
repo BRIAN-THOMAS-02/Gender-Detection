@@ -2,7 +2,7 @@
 Gender Detection using CNN and Deep Learning
 
 <br>
-Batch Normalization: https://towardsdatascience.com/what-is-batch-normalization-46058b4f583
+Batch Normalization : https://towardsdatascience.com/what-is-batch-normalization-46058b4f583
 <br>
 Batch normalization standardizes the distribution of layer inputs to combat the internal covariance shift.
 <br>
@@ -39,7 +39,9 @@ Max pooling is a type of operation that is typically added to CNNs following ind
 <br>
 When added to a model, max pooling reduces the dimensionality of images by reducing the number of pixels in the output from the previous convolutional layer.
 <br>
+<br>
 We've seen in our post on CNNs that each convolutional layer has some number of filters that we define with a specified dimension and that these filters convolve our image input channels.
+<br>
 <br>
 When a filter convolves a given input, it then gives us an output. This output is a matrix of pixels with the values that were computed during the convolutions that occurred on our image. We call these output channels.
 <br> 
@@ -49,7 +51,7 @@ When a filter convolves a given input, it then gives us an output. This output i
 As mentioned earlier, max pooling is added after a convolutional layer. This is the output from the convolution operation and is the input to the max pooling operation.
 <br>
 After the max pooling operation, we have the following output channel :
-![image](https://user-images.githubusercontent.com/87309254/173371330-e69feede-02aa-4d12-a188-95796b45639c.png)
+  ![image](https://user-images.githubusercontent.com/87309254/173371330-e69feede-02aa-4d12-a188-95796b45639c.png)
 
 <br>
 Max pooling works like this. We define some n x n region as a corresponding filter for the max pooling operation. We're going to use 2 x 2 in this example.
