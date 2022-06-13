@@ -50,15 +50,12 @@ In this example, our convolution operation output is 26 x 26 in size. After perf
 
 
 
-
-
-
-
-
-
 Just to make sure we fully understand this operation, we're going to quickly look at a scaled down example that may be simpler to visualize.
 Scaled Down Example
+
 Suppose we have the following:
+![image](https://user-images.githubusercontent.com/87309254/173369319-33db10bf-ba6f-4d96-9091-50a359687558.png)
+
  
 We have some sample input of size 4 x 4, and we're assuming that we have a 2 x 2 filter size with a stride of 2 to do max pooling on this input channel.
 Our first 2 x 2 region is in orange, and we can see the max value of this region is 9, and so we store that over in the output channel.
@@ -66,9 +63,6 @@ Next, we slide over by 2 pixels, and we see the max value in the green region is
 Since we've reached the edge, we now move back over to the far left, and go down by 2 pixels. Here, the max value in the blue region is 6, and we store that here in our output channel.
 Finally, we move to the right by 2, and see the max value of the yellow region is 5. We store this value in our output channel.
 This completes the process of max pooling on this sample 4 x 4 input channel, and the resulting output channel is this 2 x 2 block. As a result, we can see that our input dimensions were again reduced by a factor of two.
-
-
-
 
 
 
