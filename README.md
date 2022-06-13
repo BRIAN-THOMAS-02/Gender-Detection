@@ -54,7 +54,7 @@ As mentioned earlier, max pooling is added after a convolutional layer. This is 
 <br>
 <br>
 After the max pooling operation, we have the following output channel :
-<br<
+<br>
 ![image](https://user-images.githubusercontent.com/87309254/173371330-e69feede-02aa-4d12-a188-95796b45639c.png)
 <br>
 
