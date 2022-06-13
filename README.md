@@ -103,9 +103,7 @@ With max pooling, as we're going over each region from the convolutional output,
 Just to mention quickly before going forward, there are other types of pooling that follow the exact same process we've just gone through, except for that it does some other operation on the regions rather than finding the max value.
 
 
-Average Pooling
-
-For example, average pooling is another type of pooling, and that's where you take the average value from each region rather than the max.
+Average Pooling : <br> For example, average pooling is another type of pooling, and that's where you take the average value from each region rather than the max.
 
 
 
