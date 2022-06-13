@@ -47,8 +47,8 @@ When a filter convolves a given input, it then gives us an output. This output i
  
 <br>
 As mentioned earlier, max pooling is added after a convolutional layer. This is the output from the convolution operation and is the input to the max pooling operation.
-After the max pooling operation, we have the following output channel :
 <br>
+After the max pooling operation, we have the following output channel :
 ![image](https://user-images.githubusercontent.com/87309254/173371330-e69feede-02aa-4d12-a188-95796b45639c.png)
 
 <br>
