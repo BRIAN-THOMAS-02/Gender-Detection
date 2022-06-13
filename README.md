@@ -34,6 +34,7 @@ What are the benefits?
 <br>
 
 Max Pooling: https://deeplizard.com/learn/video/ZjM_XQa5s6s
+<br>
 Max pooling is a type of operation that is typically added to CNNs following individual convolutional layers.
 <br>
 When added to a model, max pooling reduces the dimensionality of images by reducing the number of pixels in the output from the previous convolutional layer.
@@ -48,10 +49,12 @@ When a filter convolves a given input, it then gives us an output. This output i
 <br>
 As mentioned earlier, max pooling is added after a convolutional layer. This is the output from the convolution operation and is the input to the max pooling operation.
 After the max pooling operation, we have the following output channel:
+<br>
 ![image](https://user-images.githubusercontent.com/87309254/173369104-28ed6c96-f064-4eee-98d7-e01af1a616fe.png)
 
 <br>
 Max pooling works like this. We define some n x n region as a corresponding filter for the max pooling operation. We're going to use 2 x 2 in this example.
+<br>
 <br>
 We define a stride, which determines how many pixels we want our filter to move as it slides across the image.
 <br>
