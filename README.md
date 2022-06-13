@@ -64,51 +64,61 @@ In this example, our convolution operation output is 26 x 26 in size. After perf
 
 Just to make sure we fully understand this operation, we're going to quickly look at a scaled down example that may be simpler to visualize.
 Scaled Down Example
-
+<br>
 Suppose we have the following:
 ![image](https://user-images.githubusercontent.com/87309254/173369319-33db10bf-ba6f-4d96-9091-50a359687558.png)
 
- 
+<br>
+
 We have some sample input of size 4 x 4, and we're assuming that we have a 2 x 2 filter size with a stride of 2 to do max pooling on this input channel.
-
+<br>
 Our first 2 x 2 region is in orange, and we can see the max value of this region is 9, and so we store that over in the output channel.
-
+<br>
 Next, we slide over by 2 pixels, and we see the max value in the green region is 8. As a result, we store the value over in the output channel.
-
+<br>
 Since we've reached the edge, we now move back over to the far left, and go down by 2 pixels. Here, the max value in the blue region is 6, and we store that here in our output channel.
-
+<br>
 Finally, we move to the right by 2, and see the max value of the yellow region is 5. We store this value in our output channel.
 This completes the process of max pooling on this sample 4 x 4 input channel, and the resulting output channel is this 2 x 2 block. As a result, we can see that our input dimensions were again reduced by a factor of two.
 
-
+<br>
+<br>
 
 Why Use Max Pooling?
-
+<br>
 There are a couple of reasons why adding max pooling to our network may be helpful.
 
+<br>
+<br>
 
 Reducing Computational Load
-
+<br>
 Since max pooling is reducing the resolution of the given output of a convolutional layer, the network will be looking at larger areas of the image at a time going forward, which reduces the number of parameters in the network and consequently reduces computational load.
 
+<br>
+<br>
 
 Reducing Overfitting
-
+<br>
 Additionally, max pooling may also help to reduce overfitting. The intuition for why max pooling works is that, for a particular image, our network will be looking to extract some particular features.
-
+<br>
 Maybe, it's trying to identify numbers from the MNIST dataset, and so it's looking for edges, and curves, and circles, and such. From the output of the convolutional layer, we can think of the higher valued pixels as being the ones that are the most activated.
-
+<br>
 With max pooling, as we're going over each region from the convolutional output, we're able to pick out the most activated pixels and preserve these high values going forward while discarding the lower valued pixels that are not as activated.
-
+<br>
 Just to mention quickly before going forward, there are other types of pooling that follow the exact same process we've just gone through, except for that it does some other operation on the regions rather than finding the max value.
 
+<br>
+<br>
 
-Average Pooling : <br> For example, average pooling is another type of pooling, and that's where you take the average value from each region rather than the max.
+Average Pooling : 
+<br> 
+For example, average pooling is another type of pooling, and that's where you take the average value from each region rather than the max.
 
 
 
 We use dropout so that the model doesn’t overfit i.e., learn the train dataset very well and cannot generalize the output.
-
+<br>
 Dropout specifies the % of neurons we would want to keep inactive.
-
+<br>
 So here we have specified model.add(Dropout(0.25)), i.e., 25% of the neurons will be inactive for this layer.
