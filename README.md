@@ -53,10 +53,11 @@ We call these output channels.
 As mentioned earlier, max pooling is added after a convolutional layer. This is the output from the convolution operation and is the input to the max pooling operation.
 <br>
 <br>
-After the max pooling operation, we have the following output channel :
+After the max pooling operation, we have the following output channel : 
 <br>
 ![image](https://user-images.githubusercontent.com/87309254/173371330-e69feede-02aa-4d12-a188-95796b45639c.png)
 
+<br>
 <br>
 Max pooling works like this. We define some n x n region as a corresponding filter for the max pooling operation. We're going to use 2 x 2 in this example.
 <br>
